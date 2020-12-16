@@ -1,0 +1,27 @@
+$darkerPercentage: 20%;
+$incrementColor: lightgreen;
+$decrementColor: skyblue;
+
+.counter {
+  button {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 2px;
+  }
+
+  #increment {
+    background-color: $incrementColor;
+    &:hover {
+      background-color: darken($incrementColor, $darkerPercentage);
+    }
+  }
+
+  #decrement {
+    background-color: $decrementColor;
+    &:hover {
+      background-color: darken($decrementColor, $darkerPercentage);
+    }
+  }
+}
